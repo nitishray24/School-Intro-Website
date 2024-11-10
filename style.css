@@ -1,0 +1,274 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+html { scroll-behavior: smooth; }
+
+.header {
+   width: 100vw;
+   height: 100vh;
+   padding-top: 100px;
+   background-color: #4caf4f48;
+   background-image: url("./school-banners/School-Building.jpg");
+   background-size: 100%;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   gap: 5px;
+}
+.logo1{
+    max-height: 200px;
+    max-width: 200px;
+    border-radius: 50%;
+}
+.hero-heading{
+    font-size:3rem;
+    text-align: center;
+    background-color: #c4c4c45f;
+    padding: 20px;
+    border-radius: 10px;
+    color: white;
+    margin-top: 10px;
+}
+
+.navbar {
+    display: flex;
+    position: fixed;
+    top: 10;
+    width: 100vw;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.nav-links a:hover {
+    text-decoration: underline;
+}
+
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.bar {
+    height: 4px;
+    width: 25px;
+    background-color: white;
+    margin: 3px 0;
+}
+
+.sub-heading{
+    font-size: 2.5rem;
+    color: #6EBB45;
+    text-shadow:2px 2px #74f663;
+}
+
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        background-color: #4CAF50;
+        width: 100%;
+        top: 60px;
+        left: 0;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .menu-toggle {
+        display: flex;
+    }
+}
+main {
+    padding: 20px;
+}
+
+.hero {
+    background: #6EBB45;
+    color: white;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+.hero {
+    background: #6EBB45;
+    color: white;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.about, .programs, .gallery, .contact {
+    padding: 40px 20px;
+    text-align: center;
+    border: 1px solid #17b427;
+    margin: 20px 0;
+}
+
+.about h2, .programs h2, .gallery h2, .contact h2 {
+    color: #4CAF50;
+}
+
+.programs ul {
+    list-style: none;
+    padding: 0;
+}
+
+.programs li {
+    margin: 10px 0;
+}
+
+.btn {
+    background: #FFD700;
+    color: #333;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 10px;
+}
+
+.gallery img {
+    width: 100%;
+    height: 100%;
+    border-radius: 4px;
+}
+
+.view-more{
+    padding: 20px;
+    background-color: #17b427;
+    color: white;
+    border-radius: 10px;
+    border: 2px solid #03690d;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+label {
+    margin: 10px 0 5px;
+}
+
+input, textarea {
+    width: 80%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    padding: 10px 20px;
+    background: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #45a049;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+.hero img {
+   width: 100%;
+   height: 500px;
+}
+.logo span img{
+    height: 5rem;
+    width: 5rem;
+    border-radius:50%;
+    border: none;
+}
+
+.form{
+    border: 2px solid green;
+    display: flex;
+
+
+    .founder-info{
+        width: 40%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 5px;
+        img{
+            height: 200px;
+            border-radius: 20px;
+        }
+    }
+}
+#form1{
+    width: 60%;
+    padding: 10px;
+    margin: 20px;
+    border: 1px solid rgb(199, 199, 199);
+    border-radius:20px ;
+}
+
+
+@media (max-width: 768px) {
+    .form{
+        border: 2px solid green;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    #formic{
+        width: 90%;
+        padding: 10px;
+        margin: 20px;
+        border: 1px solid rgb(199, 199, 199);
+        border-radius:20px ;
+    }
+
+
+}
+
+a:active{
+    color: blue;
+}
